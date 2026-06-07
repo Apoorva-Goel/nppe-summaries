@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NPPE Visual Study Summaries</title>
+<meta name="description" content="One-page visual study summaries — mindmaps, flowcharts and infographics — for the Canadian National Professional Practice Examination (NPPE / PPE). Covers three core textbooks.">
+<meta name="theme-color" content="#2563eb">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563eb'/%3E%3Ctext x='50' y='70' font-size='60' font-family='Segoe UI,Arial' font-weight='800' fill='white' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --ink:#1f2933; --muted:#5b6b7b; --line:#d7dee6; --bg:#f4f6f9; --card:#fff;
+    --c1:#2563eb; --c1bg:#e8effe; --c2:#0d9488; --c2bg:#e2f6f3;
+    --c3:#b45309; --c3bg:#fdf0dd; --c4:#7c3aed; --c4bg:#f0e9fe;
+  }
+  @media(prefers-color-scheme:dark){
+    :root{--ink:#e8eaed;--muted:#9aa3ad;--line:#2a2f37;--bg:#0f1115;--card:#181b21;
+      --c1bg:#16233f;--c2bg:#0f2a28;--c3bg:#2c2310;--c4bg:#241a3a;}
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Segoe UI',-apple-system,system-ui,sans-serif;color:var(--ink);
+    background:var(--bg);line-height:1.5;-webkit-font-smoothing:antialiased}
+  .hero{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;padding:38px 22px 46px;position:relative;overflow:hidden}
+  .hero::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% -10%,rgba(255,255,255,.18),transparent 55%);pointer-events:none}
+  .hero-in{max-width:980px;margin:0 auto;position:relative;z-index:1}
+  .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#dbe4ff;margin-bottom:10px}
+  .hero h1{font-size:clamp(26px,6vw,40px);font-weight:800;letter-spacing:-.02em;line-height:1.12}
+  .hero p{margin-top:10px;font-size:clamp(14px,2.4vw,16px);color:#eaf0ff;max-width:620px}
+  .pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .pill{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.22);color:#fff;
+    font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:999px}
+  main{max-width:980px;margin:0 auto;padding:30px 22px 60px}
+  .tip{display:flex;gap:10px;align-items:flex-start;background:var(--c1bg);border-left:3px solid var(--c1);
+    border-radius:10px;padding:12px 15px;font-size:13.5px;color:var(--ink);margin-bottom:26px}
+  .tip b{color:var(--c1)}
+  .books{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
+  a.book{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:var(--card);
+    border:1px solid var(--line);border-radius:16px;padding:22px 22px 18px;transition:transform .15s,box-shadow .2s,border-color .15s;
+    position:relative;overflow:hidden;border-top-width:5px}
+  a.book:hover,a.book:active{transform:translateY(-3px);box-shadow:0 14px 30px rgba(20,40,70,.13);border-color:var(--c1)}
+  a.book.b1{border-top-color:var(--c1)} a.book.b2{border-top-color:var(--c3)} a.book.b3{border-top-color:var(--c2)}
+  .bk-num{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+  .b1 .bk-num{color:var(--c1)} .b2 .bk-num{color:var(--c3)} .b3 .bk-num{color:var(--c2)}
+  .bk-title{font-size:19px;font-weight:800;margin:7px 0 4px;line-height:1.22}
+  .bk-ed{font-size:12.5px;color:var(--muted);font-weight:600}
+  .bk-desc{font-size:13px;color:var(--muted);margin:12px 0 16px;flex:1}
+  .bk-foot{display:flex;align-items:center;justify-content:space-between;border-top:1px dashed var(--line);padding-top:12px}
+  .count{font-size:13px;font-weight:700}
+  .b1 .count{color:var(--c1)} .b2 .count{color:var(--c3)} .b3 .count{color:var(--c2)}
+  .go{font-size:13px;font-weight:700;color:var(--muted)}
+  a.book:hover .go{color:var(--c1)}
+  .note{font-size:12.5px;color:var(--muted);background:var(--c3bg);border-radius:8px;padding:5px 9px;margin-top:10px;display:inline-block}
+  footer{max-width:980px;margin:0 auto;padding:0 22px 50px;text-align:center;color:var(--muted);font-size:12px}
+  footer a{color:var(--c1)}
+</style>
+</head>
+<body>
+  <div class="hero">
+    <div class="hero-in">
+      <div class="eyebrow">NPPE / PPE · Exam Revision</div>
+      <h1>Visual Study Summaries</h1>
+      <p>One-page mindmaps, flowcharts and infographics distilled from the three core law &amp; ethics textbooks behind Canada's National Professional Practice Examination.</p>
+      <div class="pills">
+        <span class="pill">📘 3 textbooks</span>
+        <span class="pill">📄 80 chapter summaries</span>
+        <span class="pill">📱 Phone &amp; tablet ready</span>
+        <span class="pill">🖨️ Print to PDF</span>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="tip"><span>💡</span><div>Tap a book to see its chapter grid, then open any chapter. Every page is built to fit <b>one printed sheet</b> — open a chapter and press <b>Ctrl/Cmd + P</b> to save a PDF revision pack.</div></div>
+
+    <div class="books">
+      <a class="book b1" href="book1/index.html">
+        <span class="bk-num">Book 1</span>
+        <div class="bk-title">Canadian Professional Engineering &amp; Geoscience</div>
+        <div class="bk-ed">Sixth Edition · Andrews et al.</div>
+        <div class="bk-desc">The core professional-practice &amp; ethics text — regulation, discipline, liability, ethics cases, environment and exam prep.</div>
+        <div class="bk-foot"><span class="count">18 chapters</span><span class="go">Open →</span></div>
+      </a>
+
+      <a class="book b2" href="book2/index.html">
+        <span class="bk-num">Book 2</span>
+        <div class="bk-title">Law for Professional Engineers</div>
+        <div class="bk-ed">Canadian &amp; Global Insights · Marston</div>
+        <div class="bk-desc">Deep dive on contract law, tort liability, construction, tendering (Contract A), bonds, liens, ADR and IP.</div>
+        <div class="bk-foot"><span class="count">35 chapters</span><span class="go">Open →</span></div>
+      </a>
+
+      <a class="book b3" href="book3/index.html">
+        <span class="bk-num">Book 3</span>
+        <div class="bk-title">Practical Law of Architecture, Engineering &amp; Geoscience</div>
+        <div class="bk-ed">Samuels &amp; Sanders</div>
+        <div class="bk-desc">Practice-focused coverage — contracts, torts, dispute resolution, insurance, bonds, liens, labour, privacy and internet law.</div>
+        <div class="bk-foot"><span class="count">27 chapters</span><span class="go">Open →</span></div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    Visual study summaries for personal NPPE/PPE exam preparation. Textbook content remains the property of the original authors &amp; publishers.<br>
+    Verify all points against current <a href="https://www.peo.on.ca">PEO</a> standards before relying on them.
+  </footer>
+</body>
+</html>
