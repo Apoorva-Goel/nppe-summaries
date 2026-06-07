@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch 1 — The Canadian Legal System</title>
+<style>
+  :root{
+    --ink:#1f2933; --muted:#5b6b7b; --line:#d7dee6; --bg:#f4f6f9;
+    --c1:#2563eb; --c1bg:#e8effe; --c2:#0d9488; --c2bg:#e2f6f3;
+    --c3:#b45309; --c3bg:#fdf0dd; --c4:#7c3aed; --c4bg:#f0e9fe;
+    --c5:#be123c; --c5bg:#fde7ec; --c6:#0369a1; --c6bg:#e3f1fb;
+  }
+  *{box-sizing:border-box}
+  body{font-family:'Segoe UI',-apple-system,system-ui,sans-serif;color:var(--ink);
+       background:var(--bg);margin:0;padding:24px;line-height:1.45;}
+  .sheet{max-width:1080px;margin:0 auto;background:#fff;border-radius:14px;
+         box-shadow:0 4px 24px rgba(20,40,70,.08);padding:30px 34px 38px;}
+  .eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--c1);font-weight:700}
+  h1{font-size:27px;margin:4px 0 2px;font-weight:800;letter-spacing:-.01em}
+  .sub{color:var(--muted);font-size:14px;margin-bottom:18px}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 22px}
+  .chip{font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:30px;background:var(--c1bg);color:var(--c1)}
+  h2{font-size:15px;margin:26px 0 12px;display:flex;align-items:center;gap:9px;font-weight:800}
+  h2 .dot{width:11px;height:11px;border-radius:3px;background:var(--c1)}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .card{border:1px solid var(--line);border-radius:11px;padding:13px 15px;background:#fff}
+  .card h3{margin:0 0 6px;font-size:13.5px;font-weight:800}
+  .card p,.card li{font-size:12.7px;color:#33414f;margin:3px 0}
+  .card ul{margin:4px 0 0;padding-left:17px}
+  /* mindmap */
+  .mind{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+  .node{border-radius:11px;padding:11px 12px;border:1px solid transparent}
+  .node h3{font-size:12.8px;margin:0 0 5px}
+  .node ul{padding-left:15px;margin:0}.node li{font-size:11.6px;margin:2px 0}
+  /* flow */
+  .flow{display:flex;flex-direction:column;align-items:center;gap:0;margin-top:6px}
+  .fbox{border:2px solid var(--c6);background:var(--c6bg);color:var(--c6);font-weight:700;
+        border-radius:9px;padding:9px 16px;font-size:13px;text-align:center;min-width:62%}
+  .fbox small{display:block;font-weight:500;color:#3a566b;font-size:11px;margin-top:2px}
+  .arrow{color:var(--c6);font-size:17px;line-height:1;margin:3px 0}
+  .frow{display:flex;gap:12px;justify-content:center;width:100%}
+  .frow .fbox{min-width:0;flex:1}
+  /* terms */
+  .terms{display:grid;grid-template-columns:1fr 1fr;gap:7px 22px}
+  .term{font-size:12.4px;padding:3px 0;border-bottom:1px dashed var(--line)}
+  .term b{color:var(--c4)}
+  .keybox{background:var(--c5bg);border-left:4px solid var(--c5);border-radius:8px;padding:11px 14px;margin-top:6px}
+  .keybox b{color:var(--c5)}
+  .footer{margin-top:26px;font-size:11px;color:var(--muted);text-align:center;border-top:1px solid var(--line);padding-top:12px}
+  @media print{body{background:#fff;padding:0}.sheet{box-shadow:none;border-radius:0;max-width:100%}}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="eyebrow">Book 2 · Law for Professional Engineers — Chapter 1</div>
+  <h1>The Canadian Legal System</h1>
+  <div class="sub">Foundations: where law comes from, how courts are organized, and who has power to make it.</div>
+  <div class="chips">
+    <span class="chip">Common law + equity</span>
+    <span class="chip">Precedent</span>
+    <span class="chip">Statutes &amp; regulations</span>
+    <span class="chip">Constitution &amp; Charter</span>
+    <span class="chip">Court hierarchy</span>
+  </div>
+
+  <h2><span class="dot"></span>Sources of Law &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12px">— mindmap</span></h2>
+  <div class="mind">
+    <div class="node" style="background:var(--c1bg)"><h3 style="color:var(--c1)">Common Law</h3>
+      <ul><li>"Judge-made law"</li><li>Built case-by-case</li><li>Originally rigid, fixed remedies</li></ul></div>
+    <div class="node" style="background:var(--c2bg)"><h3 style="color:var(--c2)">Equity</h3>
+      <ul><li>Appeals to the monarch</li><li>"Fairness &amp; conscience"</li><li>Merged with common law</li></ul></div>
+    <div class="node" style="background:var(--c3bg)"><h3 style="color:var(--c3)">Legislation</h3>
+      <ul><li>Statutes by legislatures</li><li>Codifies or creates law</li><li>e.g. Professional Engineers Act</li></ul></div>
+    <div class="node" style="background:var(--c4bg)"><h3 style="color:var(--c4)">Regulations</h3>
+      <ul><li>Made under a statute</li><li>Detail/scope (e.g. exams)</li><li>Valid only if authorized</li></ul></div>
+    <div class="node" style="background:var(--c6bg)"><h3 style="color:var(--c6)">Constitution</h3>
+      <ul><li>Supreme law (s.52)</li><li>Charter of Rights</li><li>Overrides inconsistent law</li></ul></div>
+  </div>
+
+  <h2 style="--c1:var(--c2)"><span class="dot" style="background:var(--c2)"></span>Theory of Precedent (stare decisis)</h2>
+  <div class="grid3">
+    <div class="card"><h3 style="color:var(--c2)">The rule</h3><p>Courts follow legal principles from earlier decisions on similar facts &rarr; <b>predictability</b>.</p></div>
+    <div class="card"><h3 style="color:var(--c2)">The flexibility</h3><p>Courts may apply <b>equitable discretion</b> or distinguish cases on minor factual differences.</p></div>
+    <div class="card"><h3 style="color:var(--c2)">The trade-off</h3><p>Departures evolve <b>slowly</b> — sometimes criticized, but the basis of a stable system.</p></div>
+  </div>
+
+  <div class="grid2" style="margin-top:8px">
+    <div>
+      <h2 style="--c1:var(--c6)"><span class="dot" style="background:var(--c6)"></span>Court Hierarchy &nbsp;<span style="font-weight:500;color:var(--muted);font-size:12px">— flowchart (binding ↓)</span></h2>
+      <div class="flow">
+        <div class="fbox">Supreme Court of Canada<small>Final appeal · binds ALL Canadian courts</small></div>
+        <div class="arrow">▲ binding</div>
+        <div class="fbox" style="border-color:var(--c1);background:var(--c1bg);color:var(--c1)">Provincial Court of Appeal<small>Highest court within the province</small></div>
+        <div class="arrow" style="color:var(--c1)">▲</div>
+        <div class="frow">
+          <div class="fbox" style="border-color:var(--c3);background:var(--c3bg);color:var(--c3)">Superior Court of Justice<small>Large claims · serious/federal crime · Small Claims branch</small></div>
+          <div class="fbox" style="border-color:var(--c3);background:var(--c3bg);color:var(--c3)">Ontario Court of Justice<small>Provincial offences · domestic (not divorce)</small></div>
+        </div>
+        <div class="arrow" style="color:var(--c4)">also</div>
+        <div class="fbox" style="border-color:var(--c4);background:var(--c4bg);color:var(--c4)">Federal Court of Canada<small>Patents · trademarks · copyright</small></div>
+      </div>
+      <p style="font-size:11.5px;color:var(--muted);margin-top:8px">Other provinces / England / US = <b>persuasive</b>, not binding.</p>
+    </div>
+    <div>
+      <h2 style="--c1:var(--c5)"><span class="dot" style="background:var(--c5)"></span>Division of Powers — Constitution Act, 1867</h2>
+      <div class="grid2" style="gap:10px">
+        <div class="card" style="border-color:#bcd0ee"><h3 style="color:var(--c1)">Federal — s.91</h3>
+          <ul><li>Trade &amp; commerce</li><li>Taxation (any mode)</li><li>Navigation &amp; shipping</li><li>Banking · currency</li><li>Bankruptcy &amp; insolvency</li><li>Patents · copyrights</li><li>Criminal law</li></ul></div>
+        <div class="card" style="border-color:#f1c9b3"><h3 style="color:var(--c3)">Provincial — s.92</h3>
+          <ul><li>Direct taxation (prov.)</li><li>Public lands &amp; timber</li><li>Local works</li><li>Incorporating cos.</li><li>Property &amp; civil rights</li><li>Admin of justice</li><li>Local/private matters</li></ul></div>
+      </div>
+      <div class="keybox" style="background:#eef4ff;border-color:var(--c1)">
+        <b style="color:var(--c1)">"POGG"</b> — Parliament's residual power over <i>Peace, Order &amp; good Government</i> covers anything not listed; read broadly for national concerns. A law beyond a government's authority is <b>ultra vires</b> &rarr; void.</div>
+    </div>
+  </div>
+
+  <h2 style="--c1:var(--c5)"><span class="dot" style="background:var(--c5)"></span>The Charter of Rights &amp; Freedoms (Constitution Act, 1982)</h2>
+  <div class="grid3">
+    <div class="card"><h3 style="color:var(--c5)">What changed</h3><p>Courts can now <b>strike down laws that violate rights</b> — not just laws made by the wrong level of government. Reduces Parliamentary Supremacy.</p></div>
+    <div class="card"><h3 style="color:var(--c5)">s.2 freedoms</h3><p>Conscience &amp; religion · thought/expression &amp; press · peaceful assembly · association.</p></div>
+    <div class="card"><h3 style="color:var(--c5)">The limits</h3><p><b>s.1</b> "reasonable limits" · <b>s.33</b> notwithstanding clause lets a gov't keep a law despite a violation. <b>s.52</b>: Constitution is supreme.</p></div>
+  </div>
+
+  <h2 style="--c1:var(--c4)"><span class="dot" style="background:var(--c4)"></span>Two More Distinctions</h2>
+  <div class="grid2">
+    <div class="card"><h3 style="color:var(--c4)">Public vs Private law</h3><p><b>Public:</b> gov't ↔ individuals (criminal, constitutional). <b>Private:</b> individuals ↔ each other (contracts, torts).</p></div>
+    <div class="card"><h3 style="color:var(--c4)">Quebec is different</h3><p>Civil Code (from the Napoleonic Code), <b>not</b> common law. Get advice from a Quebec lawyer. Note: "civil" in common law usually means "private."</p></div>
+  </div>
+
+  <h2 style="--c1:var(--c4)"><span class="dot" style="background:var(--c4)"></span>Key Terminology — quick recall</h2>
+  <div class="terms">
+    <div class="term"><b>Litigation</b> — a lawsuit</div>
+    <div class="term"><b>Plaintiff</b> — brings the claim (Crown, in criminal)</div>
+    <div class="term"><b>Defendant</b> — defends the claim ("accused" in criminal)</div>
+    <div class="term"><b>Appellant</b> — party appealing a decision</div>
+    <div class="term"><b>Respondent</b> — party upholding the decision</div>
+    <div class="term"><b>Privity of contract</b> — legal relationship between contract parties</div>
+    <div class="term"><b>Creditor</b> — owed an amount</div>
+    <div class="term"><b>Debtor</b> — owes a creditor</div>
+    <div class="term" style="grid-column:1/-1"><b>Indemnification</b> — promise to directly reimburse a loss; unlike a guarantee, can be claimed <i>directly</i> without first pursuing the debtor</div>
+  </div>
+
+  <div class="keybox">
+    <b>Rule of Law:</b> no one is above the law. Judiciary and legislatures are <b>separate &amp; independent</b>; an independent judiciary enforces laws, protects rights, and (with precedent) makes outcomes predictable for business.
+  </div>
+
+  <div class="footer">Book 2 · Chapter 1 — visual study summary · for exam review</div>
+</div>
+</body>
+</html>
